@@ -28,5 +28,5 @@ set :bundle_quiet, false
 # Add any additional directories you want to link
 # append :linked_files, "config/credentials/production.key"
 # or
-# append :linked_files, "config/master.key"
+append :linked_files, "config/master.key"
 append :linked_files, "config/database.yml"
