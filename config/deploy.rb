@@ -23,6 +23,8 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to true if using ActiveRecord
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets')
+set :bundle_jobs, 1
+set :bundle_quiet, false
 # Add any additional directories you want to link
 # append :linked_files, "config/credentials/production.key"
 # or
